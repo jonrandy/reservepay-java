@@ -1,0 +1,16 @@
+# Build output
+target/
+*.class
+*.jar
+
+# Editor / OS
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+.DS_Store
+
+# Local scratch
+scratch/

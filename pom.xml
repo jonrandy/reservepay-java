@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.reservepay</groupId>
+  <artifactId>reservepay</artifactId>
+  <version>0.0.1</version>
+  <packaging>jar</packaging>
+
+  <name>reservepay-java</name>
+  <description>Typed Java clients for the Reservepay APIs</description>
+  <url>https://github.com/reservepay/reservepay-java</url>
+
+  <licenses>
+    <license>
+      <name>MIT License</name>
+      <url>https://opensource.org/licenses/MIT</url>
+    </license>
+  </licenses>
+
+  <scm>
+    <url>https://github.com/reservepay/reservepay-java</url>
+  </scm>
+
+  <properties>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <!-- The clients wrap webfunction-java. If it is not available from a public Maven repository yet,
+         run `mvn install` in a checkout of https://github.com/webfunction-protocol/webfunction-java first
+         and it will resolve from your local repository. -->
+    <dependency>
+      <groupId>org.webfunction</groupId>
+      <artifactId>webfunction</artifactId>
+      <version>0.3.0</version>
+    </dependency>
+
+    <!-- Provides @Nullable, used by the generated clients -->
+    <dependency>
+      <groupId>com.google.code.findbugs</groupId>
+      <artifactId>jsr305</artifactId>
+      <version>3.0.2</version>
+    </dependency>
+  </dependencies>
+</project>
